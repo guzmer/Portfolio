@@ -1,0 +1,57 @@
+.education {
+    padding: 100px 0px;
+    margin: 50px 0px;
+    margin-left: 120px;
+    background-color: black;
+  }
+  
+  .education hr {
+    font-family: 'Poppins', sans-serif; 
+    color: white;
+    width: 400px;
+    margin: 10px auto;
+  }
+  
+  .education h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold;
+    color: white;
+  }
+  
+  .education .vertical-timeline-element-title {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: bold;
+    color: #e0b50f;
+  }
+  
+  .education .vertical-timeline-element-subtitle {
+    font-family: 'Poppins', sans-serif; 
+    color: #1e1e2c;
+  }
+
+  .education .white-date {
+    font-family: 'Poppins', sans-serif; 
+    color: white;
+  }
+  
+  /* ========= DARK MODE ============ */
+  
+  #dark .education {
+    background-color: rgba(255, 255, 255, 0.095);
+  }
+  
+  /* ========================== */
+  @media (max-width: 600px) {
+    .education {
+      margin: 0;
+      padding: 0;
+      margin-top: 30px;
+    }
+    .education h2 {
+      padding-top: 20px;
+    }
+    .education hr {
+      width: 280px;
+      margin-bottom: 10px;
+    }
+  }

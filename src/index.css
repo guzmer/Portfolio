@@ -1,0 +1,15 @@
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: ba;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Choose a font */
+  color: white; /* Set text color to white for better contrast */
+}

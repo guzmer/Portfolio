@@ -1,0 +1,61 @@
+.work {
+  font-family: 'Poppins', sans-serif; 
+    background-color: black;
+    margin-left: 140px;
+  }
+  
+  .work-exp {
+    padding: 60px 0px;
+  }
+  
+  .work-exp h2 {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .work-exp hr {
+    color: white;
+    width: 400px;
+    margin: 10px auto;
+  }
+  
+  .work-exp .vertical-timeline-element-title {
+    color: #e0b50f;
+    font-weight: bold;
+  }
+  
+  .work-exp .vertical-timeline-element-subtitle {
+    color: #0000009f;
+  }
+  .work-exp p {
+    color:  #1e1e2c78;
+  }
+  .work-exp h6 {
+    color: #0f0f139d;
+  }
+
+  .work-exp .white-date {
+    color: white !important;
+  }
+  
+  /* ===== DARK MODE ========== */
+  #dark .work {
+    background-color: #e0b50f;
+  }
+  
+  #dark .work-exp h2 {
+    color: white;
+  }
+  
+  /* =================== */
+  
+  @media (max-width: 600px) {
+    .work {
+      margin: 0;
+      padding: 0;
+      margin-top: 50px;
+    }
+    .work hr {
+      width: 280px;
+    }
+  }
