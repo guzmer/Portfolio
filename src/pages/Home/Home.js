@@ -10,7 +10,7 @@ const Home = () => {
     <div className='container-fluid home-container' id="home">
         <div className='container'>
         <Fade right>
-            <h2>✨ Welcome to Meriem's Portfolio ✨</h2>
+            <h2>Welcome to Meriem's Portfolio</h2>
             <h1>
                 <Typewriter
                     options={{

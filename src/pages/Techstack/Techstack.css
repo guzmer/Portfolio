@@ -44,6 +44,14 @@
   
     transition: 1s;
   }
+
+  .techstack p {
+    text-align: center; /* Centers the paragraph text */
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto; /* Ensures it stays centered */
+}
   
   /* =============================== */
   @media (max-width: 600px) {
@@ -56,5 +64,6 @@
     .techstack hr {
       width: 280px;
     }
+
   }
   

@@ -36,3 +36,47 @@
 .contact-info a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 25px;
+    padding-bottom: 100px; /* Reduce bottom padding */
+  }
+
+  .thank-you-message h2 {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  .thank-you-message p {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column; /* Stack elements for readability */
+    align-items: center;
+  }
+
+  .contact-info a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 10px 0; /* Increase tap area */
+    gap: 8px;
+  }
+
+  .social-links {
+    margin-top: 20px;
+  }
+
+  .social-links a {
+    font-size: 2rem; /* Increase icon size for better tapability */
+    margin: 0 10px;
+  }
+}

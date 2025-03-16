@@ -1,14 +1,11 @@
 .project {
   font-family: 'Poppins', sans-serif; 
-    padding: 0px 0px;
     margin: 60px 0px;
-    margin-left: 120px;
-    margin-right: 110px;
+    margin-left: 140px;
     background-color: black;
   }
   .pb-3 {
     font-family: 'Poppins', sans-serif; 
-
     margin-left: 120px;
   }
   
@@ -39,24 +36,23 @@
   }
   
   #ads {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif; 
-
-    padding: 100px 0px;
-    margin-left: 120px;
     background-color: black;
-    align-items: stretch;
     
   }
   #ads .card {
-    width: 290px; /* Fixed width for all cards */
-    height: 500px;
-    display: flex;
-    flex-direction: column; /* Stack the content vertically */
-  }
+    max-width: 300px; /* Adjust the width as needed */
+    margin: 10px auto; /* Centers the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
   
   #ads .card-notify-badge {
     font-family: 'Poppins', sans-serif; 
-
     position: absolute;
     left: -10px;
     top: -20px;
@@ -132,6 +128,14 @@
     transition: all 0.5s ease;
     box-shadow: 12px 15px 20px 0px rgba(46, 61, 73, 0.15);
   }
+
+  .project p {
+    text-align: center; /* Centers the paragraph text */
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+    max-width: 80%;
+    margin: 0 auto; /* Ensures it stays centered */
+}
   
 
   /* =============================== */
