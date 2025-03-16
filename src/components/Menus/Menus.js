@@ -1,7 +1,5 @@
 import React from "react";
 import "./Menus.css";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
 import pic from "./../../assets/picc.png"
 import {
@@ -13,109 +11,118 @@ import {
   FcReadingEbook,
   FcVideoProjector,
 } from "react-icons/fc";
+import { motion } from "framer-motion";
+
+
 const Menus = ({ toggle }) => {
   return (
     <>
       {toggle ? (
         <>
-          <Zoom>
-            <div className="navbar-profile-pic">
-              <img
-                src={pic}
-                alt="profile pic"
-              />
-            </div>
-          </Zoom>
-          <Fade left>
-            <div className="nav-items">
-              <div className="nav-item">
-                <div className="nav-link">
-                  <Link
-                    to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                  >
-                    <FcHome />
-                    Home
-                  </Link>
-                </div>
-                <div className="nav-link">
-                  <Link
-                    to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                  >
-                    <FcAbout />
-                    About
-                  </Link>
-                </div>
-                <div className="nav-link">
-                  <Link
-                    to="work"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                  >
-                    <FcPortraitMode />
-                    Work Experince
-                  </Link>
-                </div>
-                <div className="nav-link">
-                  <Link
-                    to="education"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                  >
-                    <FcReadingEbook />
-                    Education
-                  </Link>
-                </div>
-                <div className="nav-link">
-                  <Link
-                    to="techstack"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                  >
-                    <FcBiotech />
-                    Tech Stack
-                  </Link>
-                </div>
-                <div className="nav-link">
-                  <Link
-                    to="projects"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                  >
-                    <FcVideoProjector />
-                    Projects
-                  </Link>
-                </div>
-                <div className="nav-link">
-                  <Link
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-200}
-                    duration={100}
-                  >
-                    <FcBusinessContact />
-                    Contact
-                  </Link>
-                </div>
+          {/* Using Framer Motion for Zoom effect */}
+          <motion.div
+            className="navbar-profile-pic"
+            initial={{ scale: 0 }} // Start small
+            animate={{ scale: 1 }} // End at normal size
+            transition={{ duration: 0.6 }} // Duration of the zoom effect
+          >
+            <img src={pic} alt="profile pic" />
+          </motion.div>
+
+          {/* Using Framer Motion for Fade effect */}
+          <motion.div
+            className="nav-items"
+            initial={{ opacity: 0 }} // Start with no visibility
+            animate={{ opacity: 1 }} // Fade in to full visibility
+            transition={{ duration: 0.6 }} // Duration of the fade effect
+          >
+            <div className="nav-item">
+              <div className="nav-link">
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcHome />
+                  Home
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcAbout />
+                  About
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcPortraitMode />
+                  Work Experience
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="education"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcReadingEbook />
+                  Education
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="techstack"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcBiotech />
+                  Tech Stack
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcVideoProjector />
+                  Projects
+                </Link>
+              </div>
+              <div className="nav-link">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-200}
+                  duration={100}
+                >
+                  <FcBusinessContact />
+                  Contact
+                </Link>
               </div>
             </div>
-          </Fade>
+          </motion.div>
         </>
       ) : (
         <>
@@ -141,6 +148,18 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcAbout />
+                </Link>
+              </div>
+              
+              <div className="nav-link">
+                <Link
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={100}
+                >
+                  <FcPortraitMode />
                 </Link>
               </div>
               <div className="nav-link">
@@ -176,17 +195,6 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcVideoProjector />
-                </Link>
-              </div>
-              <div className="nav-link">
-                <Link
-                  to="work"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcPortraitMode />
                 </Link>
               </div>
               

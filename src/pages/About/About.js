@@ -1,24 +1,30 @@
 import React from "react";
 import "./About.css";
-import Jump from "react-reveal/Jump";
+import { motion } from "framer-motion";
+
 
 const About = () => {
   return (
-    <>
-      <Jump>
-        <div className="about" id="about">
-          <div className="about-content">
-            <h1>Hi there 👋</h1>
-            <p>
-            I'm <b>Meriem Saied</b>, a passionate Software Engineer who loves turning ideas into reality. 💡💻 <br></br>
-            From sleek UIs 🎨 to powerful backends 🔧, I’m all about creating impact.✨  <br></br>
-            Passionate about tech, always learning, and ready for new challenges. <br></br> Let’s make something awesome! 🚀🤝 <br></br>
-            <div className="note">Oh, and by the way, this site will keep evolving because I’m constantly learning and cooking up new projects! 🌱🔧</div>
-            </p>
+    <motion.div
+      className="about"
+      id="about"
+      initial={{ y: -100 }} // Start position above the normal position
+      animate={{ y: 0 }} // End position at normal position
+      transition={{ type: "spring", stiffness: 300, damping: 20 }} // Spring animation for a "jumping" effect
+    >
+      <div className="about-content">
+        <h1>Hi there 👋</h1>
+        <p>
+          I'm <b>Meriem Saied</b>, a passionate Software Engineer who loves turning ideas into reality. 💡💻 <br />
+          From sleek UIs 🎨 to powerful backends 🔧, I’m all about creating impact.✨ <br />
+          Passionate about tech, always learning, and ready for new challenges. <br />
+          Let’s make something awesome! 🚀🤝 <br />
+          <div className="note">
+            Oh, and by the way, this site will keep evolving because I’m constantly learning and cooking up new projects! 🌱🔧
           </div>
-        </div>
-      </Jump>
-    </>
+        </p>
+      </div>
+    </motion.div>
   );
 };
 
