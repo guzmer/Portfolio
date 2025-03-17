@@ -21,7 +21,6 @@ const Projects = () => {
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
-                  <span className="card-notify-badge">Full stack</span>
                   <img
                     src={pic1}
                     alt="project1"
@@ -48,7 +47,6 @@ const Projects = () => {
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
-                  <span className="card-notify-badge">ML-Based Solution</span>
                   <img
                     src={pic2}
                     alt="project2"
@@ -75,7 +73,6 @@ const Projects = () => {
             <div className="col-md-4">
               <div className="card rounded">
                 <div className="card-image">
-                  <span className="card-notify-badge">Web Scraping</span>
                   <img
                     src={pic3}
                     alt="project3"
